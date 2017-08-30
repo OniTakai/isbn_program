@@ -24,4 +24,8 @@ class TestISBN < Minitest::Test
     def test_clean_num
         assert_equal("12345",clean_up("12-3 4 - 5"))
     end
+
+    def test_length_clean
+        assert_equal(true,check_length("123-45 678-99"))
+    end 
 end 

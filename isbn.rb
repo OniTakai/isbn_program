@@ -24,3 +24,15 @@ def clean_up(number)
 end
 
 
+def check_length(number) 
+    number = number.delete("-")
+    number = number.delete(" ")
+    isbn_clean = number
+    puts number.length
+
+    if isbn_clean.length == 10 || isbn_clean.length ==13
+        true
+    else 
+        false
+    end
+end 
